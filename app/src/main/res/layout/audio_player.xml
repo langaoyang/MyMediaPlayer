@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_bg"
+    android:orientation="vertical" >
+
+    <!-- 顶部布局 -->
+
+    <include layout="@layout/audio_player_top" />
+    <!-- 中间布局 -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/audio_player_middle" />
+    <!-- 底部布局 -->
+
+    <include layout="@layout/audio_player_bottom" />
+
+</LinearLayout>
